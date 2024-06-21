@@ -1,4 +1,5 @@
 import "./App.css";
+import { Boot } from "./boot";
 import { Amiguo } from "./compas/compas";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <br />
 
       <Amiguo />
+      <Boot />
     </div>
   );
 }

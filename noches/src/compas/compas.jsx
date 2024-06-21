@@ -1,5 +1,9 @@
 import { useState } from "react";
 import "./compas.css";
+import judio from "../img/judio.jpg";
+import chiquito from "../img/chiquito.jpg";
+import gabo from "../img/gabo.jpg";
+import manga from "../ img/manga.jpg";
 
 export const Amiguo = () => {
   const [am, setAm] = useState("");
@@ -7,10 +11,32 @@ export const Amiguo = () => {
 
   const condicional = (nombre) => {
     if (nombre === "zaca") {
-      return "judio, el horno te extraña";
+      return (
+        <>
+          <div className="card">
+            <img src={judio} className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">No te pongas como lokita {nombre}</h5>
+              <p className="card-text">judio, el horno te extraña.</p>
+            </div>
+          </div>
+        </>
+      );
     } else if (nombre === "raul") {
       return " a cuanto la paloma? ";
     } else if (nombre === "zacarias") {
+      return (
+        <>
+          <div className="card">
+            <img src={judio} className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">No te pongas como lokita {nombre}</h5>
+              <p className="card-text">judio, el horno te extraña.</p>
+            </div>
+          </div>
+        </>
+      );
+
       return "que nombre mas judio por dios xd";
     } else if (nombre === "raulex") {
       return "peruano";
@@ -56,7 +82,7 @@ export const Amiguo = () => {
   };
 
   return (
-    <div className="container">
+    <div className="containerg">
       <h2 className="titles">Pon tu nombre mi querido brother</h2>
       <input
         onChange={buscar}
