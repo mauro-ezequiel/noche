@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./compas.css";
 
 export const Amiguo = () => {
   const [am, setAm] = useState("");
@@ -35,7 +36,13 @@ export const Amiguo = () => {
       return "como se drogaba fede lpm jajaajaj";
     } else if (nombre === "chino") {
       return "lee este chisme de zaca rapido y en voz alta *zaca estaba en el cuarto de lucho soy gay y me la como completa * nose si lo hiciste, pero si es asi jajaja. ponete como lokita";
-    } else "escribi bien tu nombre lcdth";
+    } else if (nombre === "sexo") {
+      return "sapee!";
+    } else if (nombre === "mosca") {
+      return "blue leavel ";
+    } else {
+      return "escribi bien tu nombre lcdth";
+    }
   };
 
   const buscar = (valor) => {
@@ -49,15 +56,17 @@ export const Amiguo = () => {
   };
 
   return (
-    <>
+    <div className="container">
+      <h2 className="titles">Pon tu nombre mi querido brother</h2>
       <input
         onChange={buscar}
         placeholder="pone tu nombre lokita"
         type="text"
       />
+      <br />
       <button onClick={buttonBuscador}>buscar</button>
       <br />
-      <h3>{am}</h3>
-    </>
+      <h3 className="texto">{am}</h3>
+    </div>
   );
 };

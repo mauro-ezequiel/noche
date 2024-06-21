@@ -1,0 +1,33 @@
+.container {
+  background-color: rgb(87, 132, 115);
+  width: 45%;
+
+  margin: auto;
+  display: block;
+  border-radius: 0.5em;
+}
+.titles {
+  background-color: rgb(39, 86, 63);
+  color: #d7f1d7;
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 0.9em;
+  font-size: 0.9em;
+}
+button {
+  width: 100%;
+  padding: 0.3em;
+  background-color: rgb(7, 128, 202);
+  color: #eeeeee;
+  border-radius: 0.5em;
+}
+
+.texto {
+  padding: 0.8em;
+  color: #000;
+}

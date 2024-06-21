@@ -1,14 +1,21 @@
 import "./App.css";
-import { Amiguo } from "./compas";
+import { Amiguo } from "./compas/compas";
 
 function App() {
   return (
-    <>
-      <h2>xd</h2>
+    <div className="boddy">
+      <header>
+        <span className="title">
+          Boludeces
+          <span className="  two">para mis Lokitas</span>
+        </span>
+        <br />
+      </header>
+
       <br />
 
       <Amiguo />
-    </>
+    </div>
   );
 }
 
